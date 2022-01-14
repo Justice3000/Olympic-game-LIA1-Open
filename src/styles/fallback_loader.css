@@ -1,0 +1,71 @@
+.section_fallback {
+  margin-top: 30vh;
+  margin-left: 6rem;
+}
+h1.fallback {
+  color: rgb(255, 255, 255);
+  min-width: 50vw;
+  text-shadow: 0 0 2px rgb(243, 0, 0), 0 0 4px #4dfff0;
+}
+
+div.fallback {
+  color: #fff;
+}
+
+span.item {
+  color: rgb(255, 183, 183);
+}
+
+span.fallback {
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.loader0 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+.loader1 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.3s;
+}
+.loader2 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+.loader3 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+.loader4 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.6s;
+}
+.loader5 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.7s;
+}
+.loader6 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+
+@keyframes drop {
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+    text-shadow: 0 0 1px #fff, 0 0 2px #4dfff0;
+  }
+  80% {
+    opacity: 1;
+    text-shadow: 0 0 2px #fff, 0 0 4px #4dfff0;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Sugar Punch";
+  src: local("Sugar Punch"),
+    url(../styles/fonts/sugarpunch.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Skate";
+  src: local("Skate"), url(../styles/fonts/skate.ttf) format("opentype");
+}
+
+.main_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease;
+  transition: background-color 1s ease;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  transition: opacity 1s;
+  opacity: 0;
+  cursor: grab;
+}
+
+.show {
+  opacity: 1;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  width: 40vw;
+  margin-top: 1rem;
+}
+
+.name_game {
+  margin-top: 3rem;
+  font-family: "Sugar Punch", monospace;
+  font-size: 5rem;
+  color: aliceblue;
+}
+
+.column_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.play_button {
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-family: "Skate", monospace;
+  cursor: pointer;
+}
+
+.play_button:hover {
+  text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 8px #4dff4d, 0 0 16px #53ff4d;
+  min-width: 50%;
+  border-radius: 10px;
+  transition: background-color 1s ease;
+}
+
+.random_fact {
+  color: aliceblue;
+  padding-top: 10px;
+  font-size: 1rem;
+}
+
+.teq_label {
+  padding-top: 1rem;
+  color: aliceblue;
+  font-size: 1rem;
+}
+
+.shake {
+  animation: shake 20s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}
+
+.block_all {
+  pointer-events: none;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-10rem, 3rem, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(10rem, -5rem, -0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(41rem, 6rem, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(16rem, -6rem, 0);
+  }
+}

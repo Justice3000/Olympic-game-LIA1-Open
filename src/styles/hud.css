@@ -1,0 +1,36 @@
+.hud_container {
+  position: absolute;
+  top: 20px;
+  left: 45vw;
+  align-items: center;
+  z-index: 1000;
+  font-size: 2rem;
+  color: rgb(235, 244, 252);
+  font-family: "Skate", monospace;
+  text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 8px #4dfff0, 0 0 16px #4deaff;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.hud_velocity {
+  min-width: 200px;
+  position: absolute;
+  margin-left: 34vw;
+  padding-top: 10px;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 20px #ff4d4d;
+}
+
+.show {
+  opacity: 1;
+}
+
+.current_level {
+  position: absolute;
+  margin-left: -40vw;
+  padding-top: 10px;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 20px #4dff4d;
+}
