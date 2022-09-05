@@ -24,6 +24,7 @@ import { Environment } from "./c/Environment"; // old environmental solution
 function App() {
   const tequila = useStore((s) => s.tequila); //fetching tequila state/ a boolean that tells if we want to shake camera or not
   const gameOver = useStore((s) => s.gameOver); // game over boolean
+  // <PostProcessing /> add for some extra visuals
   return (
     <>
       <Canvas
@@ -48,7 +49,7 @@ function App() {
           <Environment />
           {tequila ? <CameraShake intensity={1} /> : null}
           <Preload all />
-          <PostProcessing />
+          
         </Suspense>
       </Canvas>
       <Dom />
