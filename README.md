@@ -6,7 +6,7 @@
 
 This is a simple three.js game with main focus of showing different parts of how does React work together with 3D graphics in three.js. Written in JavaScript + TypeScript. Consider this document as a humble help guide for beginners made by a one.
 
-Want to test it? You can do it here: https://ogame-2aavl.ondigitalocean.app
+Want to test it? You can do it here: [SOORY LINK IS REMOVED. WILL PUT BACK WHEN AFTER MY WEDDING]
 
 Please note, it is configured with many extra post processing effects and may be sluggish on some machines.
 
